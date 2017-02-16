@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         text = (TextView)findViewById(R.id.text);
         db = new DatabaseHelper(this);
-        
+
         db.insertData("45", "FCP", "programming", 2);
         Cursor c = db.showData();
         if(c != null && c.moveToNext()){
